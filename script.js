@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import gsap from "gsap";
-import { GLTFLoader } from "gltfLoader";
+import * as GLTFLoader from "gltfLoader";
 
 /**
  * Base
