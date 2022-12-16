@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import * as gsap from "gsap";
 import * as GLTFLoader from "gltfLoader";
 
 /**
@@ -47,7 +46,6 @@ const loadAssets = async () => {
       allAssetUrls[i],
       (asset) => {
         let obj = asset.scene;
-        console.log(obj);
         if (obj.id === 17) {
           obj.scale.set(3, 1.5, 2);
           obj.position.y = -objectDistance * 1 - 0.6;
