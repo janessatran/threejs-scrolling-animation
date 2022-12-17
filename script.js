@@ -1,7 +1,6 @@
 import * as THREE from "three";
 import * as GLTFLoader from "gltfLoader";
 import * as gsap from "gsap";
-
 /**
  * Base
  */
@@ -23,6 +22,7 @@ const sizes = {
  * Scroll
  */
 let scrollY = window.scrollY;
+let currentSection = 0;
 
 /**
  * Models
@@ -35,6 +35,7 @@ const allAssetUrls = [
 
 const allAssets = [];
 
+let assetCount = 0;
 let assetTotal = allAssetUrls.length;
 const objectDistance = 6;
 const loader = new GLTFLoader();
@@ -45,7 +46,6 @@ const loadAssets = async () => {
       allAssetUrls[i],
       (asset) => {
         let obj = asset.scene;
-        console.log(obj);
         if (obj.id === 17) {
           obj.scale.set(3, 1.5, 2);
           obj.position.y = -objectDistance * 1 - 0.6;
