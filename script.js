@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "gltfLoader";
-import * as gsap from "gsap";
+import { gsap } from "gsap";
+
 /**
  * Base
  */
@@ -199,6 +200,7 @@ renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setClearColor(0x000000, 0); // the default
 scene.background = new THREE.Color("#c0d8c0");
+
 /**
  * Animate
  */
