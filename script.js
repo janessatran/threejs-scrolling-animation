@@ -23,7 +23,6 @@ const sizes = {
  * Scroll
  */
 let scrollY = window.scrollY;
-let currentSection = 0;
 
 /**
  * Models
@@ -36,10 +35,9 @@ const allAssetUrls = [
 
 const allAssets = [];
 
-let assetCount = 0;
 let assetTotal = allAssetUrls.length;
 const objectDistance = 6;
-const loader = new THREE.GLTFLoader();
+const loader = new GLTFLoader();
 
 const loadAssets = async () => {
   for (let i = 0; i < assetTotal; i++) {
