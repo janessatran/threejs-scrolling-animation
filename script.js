@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import * as GLTFLoader from "gltfLoader";
+import { GLTFLoader } from "gltfLoader";
 import * as gsap from "gsap";
 /**
  * Base
